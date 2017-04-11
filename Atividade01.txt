@@ -1,0 +1,24 @@
+Perguntas ATIVIDADE PI
+
+1ª Qual o problema que sera resolvido?
+
+O problema de adiministraçao de um restaurante que tem uns 8 meses 
+de serviço, tudo ate agora esta sendo feito a mao.
+
+2ª Porque ele e importante? 
+
+Por que com os serviços do restaurante em um sistema ele ganha tempo
+durante o periodo de trabalho fazendo mais serviços e com uma melhor 
+qualidade, ganhando desempenho.
+
+3ª Quem sao as pessoas que sofrem com esse problema?
+
+os proprietarios e atendentes do restaurante que precisam fazer todos
+os serviços desde fazer pedido, preparar pedidos, ficar alerta com
+a data de validade dos alimentos.
+
+Quem são os concorrentes que existem? 
+
+Consumer, MarketUp, GrandChef, CRM entre outros.
+
+Igor Silva de Sousa
