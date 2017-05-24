@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title> Lista de Pediddos </title>
+    </h:head>
+    <h:body>
+        <ui:include src="menu.xhtml"/>
+        <h6> </h6>
+        <h:form>
+            <p:dataTable var="itemp" value="#{pedidoController.ListarTodosAction()}" selectionMode="single" 
+                         selection="#{PedidoController.Pedido}" rowKey="itemp.num_pedido" paginator="true" rows="6">
+                <p:column headerText="Numero do Pedido">
+                    <p:outputLabel value="#{itemp.num_pedido}" />
+                    </p:column>
+                <p:column headerText="Hora do Pedido">
+                     <p:outputLabel value="#{itemp.hora_pedido}" />
+                     </p:column>
+                <p:column headerText="Número da Mesa">
+                      <p:outputLabel value="#{itemp.mesa}" />
+                      </p:column>
+    
+            </p:dataTable>
+        </h:form>
+    </h:body>
+</html>
+

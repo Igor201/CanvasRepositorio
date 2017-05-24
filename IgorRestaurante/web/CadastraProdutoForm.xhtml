@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Cadastrar Produto</title>
+    </h:head>
+    <h:body>
+        <ui:include src="menu.xhtml"/>
+        <center>
+        <h1>Cadastrar Produto</h1>
+        </center>
+        <h:form>
+            <p:fieldset legend="Adicionar Produto ao Cardapio">
+                <p:panelGrid columns="2">
+                    <p:outputLabel value="Nome do Produto"/>
+                    <h:inputText value="#{produtoController.produto.nome_produto}"/>
+                    <p:outputLabel value="Tipo do Produto"/>
+                    <h:inputText value="#{produtoController.produto.tipo_produto}"/>
+                    <p:outputLabel value="Valor do Produto"/>
+                    <h:inputText value="#{produtoController.produto.valor_produto}"/>
+                    <p:outputLabel value="Descrição"/>
+                    <h:inputText value="#{produtoController.produto.descricao}"/>
+                </p:panelGrid>
+                <h:inputHidden value="#{produtoController.produto.id_produto}"></h:inputHidden>
+            </p:fieldset>
+            <p:commandButton update= "@form" value="Cadastrar Produto" action="#{produtoController.inserirOuAtualizarAction()}" />
+        </h:form>
+    </h:body>
+</html>
+
